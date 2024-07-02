@@ -11,7 +11,8 @@
     "test:firefox:positive": "wdio wdio-firefox.conf.js --spec ./test/specs/positive/**/*.ts",
     "test:firefox:negative": "wdio wdio-firefox.conf.js --spec ./test/specs/negative/**/*.ts",
     "allure:report": "allure generate ./allure-results --clean && allure open",
-    "clean:reports": "rm -R -f allure-results && mkdir allure-results"
+    "clean:reports": "rm -R -f allure-results && mkdir allure-results",
+    "prettier:all": "npx prettier --write ."
   },
   "keywords": [],
   "author": "",
@@ -33,6 +34,7 @@
     "chai": "^4.2.0",
     "chromedriver": "^126.0.4",
     "dotenv": "^16.4.5",
+    "prettier": "^3.3.2",
     "ts-node": "^10.9.2",
     "typescript": "^4.9.5",
     "wdio-allure-reporter": "^0.8.3",
