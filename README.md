@@ -1,1 +1,1 @@
-# prestashop-webdriver
+# ecom-webdriverio
