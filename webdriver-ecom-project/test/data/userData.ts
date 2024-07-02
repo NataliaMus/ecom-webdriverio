@@ -1,15 +1,15 @@
-import {faker} from "@faker-js/faker";
+import { faker } from '@faker-js/faker';
 
 export interface CustomerData {
-    firstName: string;
-    lastName: string;
-    postalCode: string;
+  firstName: string;
+  lastName: string;
+  postalCode: string;
 }
 
 export const correctCustomerData: CustomerData = {
-    firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
-    postalCode: faker.address.zipCode()
+  firstName: faker.name.firstName(),
+  lastName: faker.name.lastName(),
+  postalCode: faker.address.zipCode(),
 };
 
 export const successfulOrderInformation = 'Thank you for your order!';
